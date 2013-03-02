@@ -97,6 +97,13 @@ file { '/home/pi/.vimrc':
     source => "puppet:///modules/environment/.vimrc",
 }
 
+
+exec { "execution flag" :
+    path    => "/usr/local/bin/:/bin/",
+    # path    => [ "/usr/local/bin/", "/bin/" ],  # alternative syntax
+   command => "echo 'I'm at the end of the manifest",
+   }
+
 # file { '/home/fabiantheblind/.gitconfig':
 #     owner => 'fabiantheblind',
 #     group => 'fabiantheblind',
