@@ -1,6 +1,6 @@
 syntax on
-filetype plugin indent on
+" filetype plugin indent on
 set number
-set modeline
-set ls=2
+" set modeline
+" set ls=2
 
