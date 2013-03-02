@@ -90,6 +90,12 @@ file { '/home/fabiantheblind/.vimrc':
     mode => 0644,
     source => "puppet:///modules/environment/.vimrc",
 }
+file { '/home/pi/.vimrc':
+    owner => 'pi',
+    group => 'pi',
+    mode => 0644,
+    source => "puppet:///modules/environment/.vimrc",
+}
 
 # file { '/home/fabiantheblind/.gitconfig':
 #     owner => 'fabiantheblind',
